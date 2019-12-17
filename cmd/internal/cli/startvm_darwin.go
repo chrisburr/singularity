@@ -139,7 +139,7 @@ func getHypervisorArgs(sifImage, bzImage, initramfs, singAction, cliExtra string
 		sylog.Warningf("Error getting hostname: %s", err)
 		hostn = "default"
 	}
-	userInfo := fmt.Sprintf("%s:%s:%s:%s", hostn, usr.Username, usr.Uid, usr.Gid)
+	userInfo := fmt.Sprintf("%s:%s:%s", usr.Username, usr.Uid, usr.Gid)
 
 	if IsSyOS {
 		// We're ignoring anything passed since we want a SyOS
