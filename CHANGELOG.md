@@ -9,6 +9,11 @@ _With the release of `v3.0.0`, we're introducing a new changelog format in an at
 
 _The old changelog can be found in the `release-2.6` branch_
 
+## New features / functionalities
+
+  - The singularity binary is now relocatable when built without setuid
+    support
+
 # v3.6.3 - [2020-09-15]
 
 ## Security related fixes
